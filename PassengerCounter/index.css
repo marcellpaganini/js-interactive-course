@@ -42,12 +42,20 @@ button {
     cursor: pointer;
 }
 
-#increment-btn {
+#decrement-btn {
     background: darkred;
 }
 
-#increment-btn:hover {
+#decrement-btn:hover {
     background: rgb(139, 45, 45);
+}
+
+#increment-btn {
+    background: darkblue;
+}
+
+#increment-btn:hover {
+    background: rgb(45, 45, 139);
 }
 
 #save-btn {
