@@ -1,4 +1,4 @@
-let myLeads = ['www.awesomelead.com', 'www.greatlead.com', 'www.notsocoollead.com'];
+let myLeads = [];
 const inputEl = document.getElementById('input-el');
 const ulEl = document.getElementById('ul-el');
 // saveLead = () => {
@@ -9,10 +9,13 @@ const inputBtn = document.getElementById("input-btn");
 
 inputBtn.addEventListener("click", () => {
     myLeads.push(inputEl.value);
-    console.log(myLeads);
+    inputEl.value = "";
+    let elements = "";
+    for (let index = 0; index < myLeads.length; index++) {
+        
+        elements += `<li>
+                        <a href='${myLeads[index]}'>${myLeads[index]}</a>
+                      </li>`;
+    }
+    ulEl.innerHTML = elements;
 });
-
-for (let index = 0; index < myLeads.length; index++) {
-    const element = myLeads[index];
-    ulEl.innerHTML += `<li><a href='${element}'>${element}</a></li>`;
-}
