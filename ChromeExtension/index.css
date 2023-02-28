@@ -12,7 +12,7 @@ input {
     padding-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
-    border: 2px solid olivedrab;
+    border: 1px solid olivedrab;
     margin-bottom: 0.5%;
 }
 
@@ -22,8 +22,13 @@ button {
     font-size: medium;
     font-weight: 700;
     color: white;
-    border: none;
+    border: 1px solid olivedrab;
     cursor: pointer;
+}
+
+#delete-btn {
+    background-color: white;
+    color: olivedrab;
 }
 
 ul {
